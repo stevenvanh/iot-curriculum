@@ -86,6 +86,7 @@ Some labs have two options - select the Raspberry Pi option if you have a Pi and
 
 1. Set up an IoT device to listen for an IoT Central command
     * [Set up the Raspberry Pi to light an LED triggered by an IoT Central command](./steps/rules-pi-led.md)
+    * [Set up the command on a Raspberry Pi with Sense HAT](./rules-pi-led-sensehat.md)
     * [Set up the virtual IoT device Pi to report to the console triggered by an IoT Central command](./steps/rules-virtual-led.md)
 
 1. [Create the IoT Central command and trigger it from a rule](./steps/rules-command.md)
