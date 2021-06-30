@@ -49,7 +49,7 @@ To create an IoT Central application, follow these steps:
 
     1. Select a pricing plan. The free tier doesn't need an Azure subscription to use and supports up to 5 devices, but will be deleted automatically after 7 days. The other tiers need an Azure subscription but you can have 2 devices for free. After that you pay per device/month - the Standard 1 (S1) tier is US$0.40 per device per month at the time of writing, the Standard 2 (S2) tier is US$0.70. You can find the latest pricing for your region in the [Azure IoT Central pricing guide](https://azure.microsoft.com/pricing/details/iot-central/?WT.mc_id=academic-7372-jabenn)
 
-        For the IoT workshop we will use the free tier, this does not require an Azure subsription.
+       > For the IoT workshop we will use the free tier, this does not require an Azure subsription.
 
         Optionally you can use an subscription. In that case the recommended tier is Standard 2 to ensure that you can send enough messages. This will be free for this lab, as you will only be creating 2 devices.
 
