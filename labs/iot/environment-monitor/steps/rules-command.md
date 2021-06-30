@@ -195,7 +195,7 @@ You should see the web hook action for the rule.
 
 In the same way as earlier, make loud noise near the sound sensor. The LED will light up for 10 seconds if you are using a Pi, or you will see the command being called in the output.
 
-### End of IoT Workshop
+# End of IoT Workshop
 
 This is where the IoT Workshop ends.
 Under next steps you can find steps that allow you to build out your lab, this does require an Azure subscription.
