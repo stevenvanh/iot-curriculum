@@ -43,7 +43,7 @@ The Sense HAT features an 8x8 RGB LED matrix, a mini joystick and the following 
 
 ### Set up the software
 
-> Steps 1-3 are have already been prepared for the IoT Workshop for timing reasons.
+> Steps 1-3 have already been prepared for the IoT Workshop for timing reasons.
 
 1. Insert the SD card into your PC or laptop using an adapter if necessary
 
