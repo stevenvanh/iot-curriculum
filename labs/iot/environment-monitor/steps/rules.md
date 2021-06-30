@@ -15,7 +15,7 @@ The rule you will be creating will be an alert when the sound level breaks a thr
 This part will cover sending an email alert. In a later step, you will enhance this rule to control the IoT device by lighting an LED, or showing a message on the console of the virtual IoT device.
 
 >**The Sense HAT does not have noise detection capabilities. You can emulate this by adjusting the code as instructed.
-You can also configure a temperature alarm instead of a sound alarm.**
+You can also configure a temperature or humidity alarm instead of a sound alarm.**
 
 ## Create an IoT Central rule
 
