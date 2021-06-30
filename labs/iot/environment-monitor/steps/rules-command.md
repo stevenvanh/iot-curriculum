@@ -108,7 +108,7 @@ https://<app_name>.azureiotcentral.com/api/preview/devices/pi-environment-monito
     * Replace `<app_name>` with the name of your IoT Central app. You can get this from the URL that you use to access IoT central
     * Replace `<encoded_api_token>` with the API token copied earlier, with all the `&` characters replaced with `%26` and space replaced with `%20`
 
-Optionally: You can test this webhook using Postman, a free tool for testing REST APIs.
+### Optionally: You can test this webhook using Postman, a free tool for testing REST APIs.
 
 1. Download Postman from this link:
 
