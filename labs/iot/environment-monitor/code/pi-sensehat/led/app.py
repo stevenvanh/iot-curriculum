@@ -22,16 +22,16 @@ device_id = "pi-environment-monitor"
 # from 300-600 is sent
 report_high_sound = False
 
-# Gets telemetry
+# Gets telemetry from SenseHat
 # Telemetry needs to be sent as JSON data
 async def get_telemetry() -> str:
     global report_high_sound
+    
+    # Get temperature, rounded to 0 decimals
+    temperature = round(sense.get_temperature())
 
-    # Pick a random temperature
-    temperature = random.randint(20, 40)
-
-    # Pick a random humidity
-    humidity = random.randint(0, 100)
+    # Get humidity, rounded to 0 decimals
+    humidity = round(sense.get_humidity())
 
     # If a high sound value is wanted, send 1023
     # otherwise pick a random sound level
