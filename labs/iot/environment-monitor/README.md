@@ -33,7 +33,7 @@ This lab has the following parts
 1. Set up a Raspberry Pi or virtual IoT device to send temperature data
 1. Set up IoT Central and the Raspberry Pi/virtual IoT device to send humidity and sound data
 1. Perform simple analytics and create an alert on the data using rules
-1. Perform more advanced analytics to detect and visualize anomalies in the data
+1. Perform more advanced analytics to detect and visualize anomalies in the data (this part requires an Azure subscription)
 
 These parts will cover in detail what needs to be done at each step were appropriate, or link to official documentation to cover steps - that way the parts will stay more up to date.
 
