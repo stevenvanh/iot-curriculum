@@ -24,9 +24,9 @@ You will need the following hardware:
 * A keyboard, mouse and monitor
 * A [micro-HDMI to HDMI adapter or cable](https://www.raspberrypi.org/products/micro-hdmi-to-standard-hdmi-a-cable/)
 
-## Set up the Pi
+## Sense HAT
 
-1. Fit the Sense hat to the Raspberry Pi.
+ The Sense HAT is already mounted on the Raspberry Pi.
 
 ![The Sense HAT](../images/pi-sense-hat.jpg)
 ![The Sense HAT mounted on the Pi viewed from the side](../images/pi-sense-hat-fitted.jpg)
