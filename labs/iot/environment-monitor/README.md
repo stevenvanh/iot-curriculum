@@ -71,13 +71,15 @@ Some labs have two options - select the Raspberry Pi option if you have a Pi and
 
 1. Set up an IoT device to send temperature data:
     * [Set up a Raspberry Pi to send temperature data](./steps/set-up-pi.md)
+    * [Set up a Raspberry Pi with Sense HAT](./set-up-pi-sensehat.md)
     * [Set up a virtual IoT device to send temperature data](./steps/set-up-virtual-pi.md)
-     * [Set up a Raspberry Pi with Sense HAT](./set-up-pi-sensehat.md)
+  
 
 1. [Set up IoT Central to receive humidity and sound data](./steps/set-up-humidity-sound.md)
 
 1. Set up an IoT device to send humidity and sound data
     * [Set up the Raspberry Pi to send humidity and sound data](./steps/set-up-pi-humidity-sound.md)
+    * [Set up a Raspberry Pi with Sense HAT](./set-up-pi-sensehat-humidity-sound.md)
     * [Set up the virtual IoT device to send humidity and sound data](./steps/set-up-virtual-humidity-sound.md)
 
 1. [Perform simple analytics and create an email alert on the data using rules](./steps/rules.md)
