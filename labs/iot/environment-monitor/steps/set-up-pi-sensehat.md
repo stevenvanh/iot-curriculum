@@ -68,7 +68,7 @@ See the Python library for details on how to use Python with the Sense HAT: http
     1. If you want to use Wifi, select your wireless network and enter the password if needed.
 
         > Ensure that your pc and the Raspberry Pi are connected to the same network.
-        > If you are using enterprise security you may need to launch Chromium, the Pi's browser after selecting your wireless network to log in to your Wifi
+          If you are using enterprise security you may need to launch Chromium, the Pi's browser after selecting your wireless network to log in to your Wifi
 
     1. Update the Pis software
 
