@@ -48,6 +48,7 @@ The code can be tested by manually calling the command from IoT Central.
         Too Loud Command received
         #########################
         ```
+     * If you use the Raspberyy Pi with Sense HAT you should see "Too Loud" on the display.
 
 ## Call the command from the rule
 
