@@ -14,7 +14,7 @@ The Pi code needs to be changed to read the new values and send them to IoT Cent
 
 ### Update the code
 
-In this section you will be adding code to the Python file. If you haven't used Python before, be aware it is very specific about how the lines are indented, so make sure the code is indented the same as the code around it. You can find the full code in the [app.py](../code/pi/sound-humidity/app.py) file in the [code/pi/sound-humidity](../code/pi/sound-humidity) folder to check your code against if you get errors.
+In this section you will be adding code to the Python file. If you haven't used Python before, be aware it is very specific about how the lines are indented, so make sure the code is indented the same as the code around it. You can find the full code in the [app.py](../code/pi-sensehat/sound-humidity/app.py) file in the [code/pi-sensehat/sound-humidity](../code/pi/sound-humidity) folder to check your code against if you get errors.
 
 1. Connect to the Pi using Visual Studio Code, open the `Environment Monitor` folder, and open the `app.py` file.
 
