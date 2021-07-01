@@ -41,6 +41,8 @@ The Sense HAT features an 8x8 RGB LED matrix, a mini joystick and the following 
 * Humidity
 * Barometric pressure
 
+See the Python library for details on how to use Python with the Sense HAT: https://pythonhosted.org/sense-hat
+
 ### Set up the software
 
 > Steps 1-3 have already been prepared for the IoT Workshop for timing reasons.
