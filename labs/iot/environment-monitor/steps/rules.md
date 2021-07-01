@@ -77,7 +77,7 @@ To test the rule, the sound sensor needs to receive a higher value than expected
 
     * If you are using the virtual IoT device, press the space key to simulate a loud noise
 
-    * For the IoT Workshop with Sense HAT trigger the value for the telemetry option that you choose.
+    * For the IoT Workshop with Sense HAT, trigger the value for the telemetry option that you used to configure the alarm.
 
 1. Check your email for an alert. The Email will include the value that caused the rule to trigger. It may take a few minutes for the email to arrive.
 
