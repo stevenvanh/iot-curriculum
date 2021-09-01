@@ -76,7 +76,6 @@ See the Python library for details on how to use Python with the Sense HAT: http
 
 Once the Pi has rebooted, you will need to change the hostname. All newly setup Pis are configured with a hostname of `raspberrypi`, so if you have more than one Pi on your network you won't be able to distinguish between them by name unless you rename them. You will also need to enable SSH (Secure SHell) access so you can control the Pi later remotely from Visual Studio Code.
 
->For the IoT Workshop ssh has already been enabled, you can follow the steps below to verify.
 
 1. From the Raspberry Pi select the **Raspberry Pi** menu, then select **Preferences -> Raspberry Pi Configuration**
 
