@@ -45,7 +45,7 @@ See the Python library for details on how to use Python with the Sense HAT: http
 
 ### Set up the software
 
-> Steps 1-3 have already been prepared for the IoT Workshop for timing reasons.
+> **Steps 1-3 have already been prepared for the IoT Workshop for timing reasons.**
 
 1. Insert the SD card into your PC or laptop using an adapter if necessary
 
