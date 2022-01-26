@@ -44,9 +44,7 @@ The dashboard currently only shows temperature from the simulated device. It nee
 
     ![the edit dashboard button](../images/iot-central-dashboard-edit-button.png)
 
-1. Select the properties cog from the Temperature tile
-
-    ![The properties button](../images/iot-central-dashboard-temperature-tile-edit-button.png)
+1. Select the **Edit** button from the Temperature tile
 
 1. From the *Configure Chart* panel, drop down the *Devices* list, and check the `Pi Environment Monitor`.
 
@@ -66,6 +64,5 @@ In this step you added a physical device to IoT Central.
 
 In the next step you will set up this physical device and run code to connect and send temperature data. Select the relevant next step from the list below depending on if you have a Pi or want to set up a virtual IoT device.
 
-* [Set up a Raspberry Pi with Grove Pi+](./set-up-pi.md)
 * [Set up a Raspberry Pi with Sense HAT](./set-up-pi-sensehat.md)
 * [Set up a virtual device using your PC or Mac](./set-up-virtual-pi.md)
