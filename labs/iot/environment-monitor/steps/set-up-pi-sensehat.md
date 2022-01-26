@@ -18,11 +18,9 @@ You will need the following hardware:
 
 * A Raspberry Pi
 * A micro SD Card
-* An SD card to USB converter that matches the USB ports on your device if your device doesn't have an SD card slot
-* A Raspberry Pi 4 power supply (USB-C)
+* A Raspberry Pi power supply
 * A [Sense HAT](https://www.raspberrypi.org/products/sense-hat/)
 * A keyboard, mouse and monitor
-* A [micro-HDMI to HDMI adapter or cable](https://www.raspberrypi.org/products/micro-hdmi-to-standard-hdmi-a-cable/)
 
 ## Sense HAT
 
@@ -47,11 +45,11 @@ See the Python library for details on how to use Python with the Sense HAT: http
 
 > **Steps 1-3 have already been prepared for the IoT Workshop for timing reasons.**
 
-1. Insert the SD card into your PC or laptop using an adapter if necessary
+1. (Insert the SD card into your PC or laptop using an adapter if necessary)
 
-1. Using the [Raspberry Pi imager](https://www.raspberrypi.org/downloads/), image the SD card with the default Raspberry Pi OS image. You can find instructions on how to do this in the [Raspberry Pi installing images documentation](https://www.raspberrypi.org/documentation/installation/installing-images/).
+1. (Using the [Raspberry Pi imager](https://www.raspberrypi.org/downloads/), image the SD card with the default Raspberry Pi OS image. You can find instructions on how to do this in the [Raspberry Pi installing images documentation](https://www.raspberrypi.org/documentation/installation/installing-images/).)
 
-1. Insert the SD card into the Pi
+1. (Insert the SD card into the Pi)
 
 1. Connect the Pi to your keyboard, mouse and monitor. If you are using ethernet for internet access then connect the Pi to an ethernet cable connected to your network. Then connect it to the power supply.
 
