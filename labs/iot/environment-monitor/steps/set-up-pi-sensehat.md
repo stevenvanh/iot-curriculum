@@ -16,7 +16,7 @@ The temperature data will come from a temperature sensor embedded in the Sense H
 
 You will need the following hardware:
 
-* A Raspberry Pi 4
+* A Raspberry Pi
 * A micro SD Card
 * An SD card to USB converter that matches the USB ports on your device if your device doesn't have an SD card slot
 * A Raspberry Pi 4 power supply (USB-C)
