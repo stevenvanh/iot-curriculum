@@ -16,9 +16,9 @@ Commands are capabilities on an interface, so to add a command, a new version of
 
     | Display Name | Name    | Capability Type | Command Type | Request | Response |
     | ------------ | ------- | --------------- | ------------ | ------- | -------- |
-    | Too Loud     | TooLoud | Command         | Synchronous  | off     | off      |
+    | Too Hot     | TooHot | Command         | Synchronous  | off     | off      |
 
-    ![The new Too Loud capability](../images/iot-central-interface-new-too-loud-capability.png)
+    ![The new Too Hot capability](../images/iot-central-interface-new-too-hot-capability.png)
 
 1. Save the interface, and publish the device template
 
@@ -34,9 +34,9 @@ The code can be tested by manually calling the command from IoT Central.
 
     ![The commands tab](../images/iot-central-device-commands-tab.png)
 
-1. This tab shows the *Too Loud* command with a **Run** button to execute the command. Select the **Run** button.
+1. This tab shows the *Too Hot* command with a **Run** button to execute the command. Select the **Run** button.
 
-    ![The run button](../images/iot-central-device-commands-tab-tooloud-run-button.png)
+    ![The run button](../images/iot-central-device-commands-tab-toohot-run-button.png)
 
 1. You will see the result of this command depending on if you are using a Pi or a virtual device
 
@@ -45,10 +45,10 @@ The code can be tested by manually calling the command from IoT Central.
 
         ```output
         #########################
-        Too Loud Command received
+        Too Hot Command received
         #########################
         ```
-     * If you use the Raspberry Pi with Sense HAT you should see "Too Loud" on the display.
+     * If you use the Raspberry Pi with Sense HAT you should see "Too Hot" on the display.
 
 ## Call the command from the rule
 
@@ -101,7 +101,7 @@ The rule can call a webhook when triggered. The webhook needs a URL to call - a 
 The format of this URL is:
 
 ```output
-https://<app_name>.azureiotcentral.com/api/preview/devices/pi-environment-monitor/components/EnvironmentMonitor_Environment/commands/TooLoud?access_token=<encoded_api_token>
+https://<app_name>.azureiotcentral.com/api/preview/devices/pi-environment-monitor/components/EnvironmentMonitor_Environment/commands/TooHot?access_token=<encoded_api_token>
 ```
 
 1. To build the URL that you will use, take the above URL and replace the following:
@@ -141,7 +141,7 @@ The request will run and you will see result in the *Body* tab of the response s
 }
 ```
 
-You should also see the Too Loud command called in the output of the Python app, and either the LED light up for 10 seconds, or a message output to the console.
+You should also see the Too Hot command called in the output of the Python app, and either the LED light up for 10 seconds, or a message output to the console.
 
 > If you see the following, then the Python app is not running:
 >
@@ -194,7 +194,7 @@ You should see the web hook action for the rule.
 
 ### Test the rule
 
-In the same way as earlier, make loud noise near the sound sensor. The LED will light up for 10 seconds if you are using a Pi, or you will see the command being called in the output.
+In the same way as earlier, trigger the temperature threshold. The display of the SenseHat will show the "Too Hot"message if you use a Pi, or you will see the command being called in the output.
 
 # End of IoT Workshop
 
