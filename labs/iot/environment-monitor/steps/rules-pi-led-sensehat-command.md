@@ -46,8 +46,13 @@ The code can be tested by manually calling the command from IoT Central.
         #########################
         ```
      
+# End of IoT Workshop
 
-## Call the command from the rule
+This is where the IoT Workshop ends.
+You can optionally create the webhook as discribed in the next section.
+Under next steps at the bottom of this page you can find steps that allow you to build out your lab, this does require an Azure subscription.
+
+## Optionally: Call the command from the rule
 
 IoT central commands can be called from webhooks - special URLs that you can make a request to to execute the command. Not everyone can call these commands - that would make IoT Central apps insecure. Instead to be able to call the command you need to be authorized, for example using an API token, a special key that allows you to call these commands.
 
@@ -181,10 +186,6 @@ You should see the web hook action for the rule.
 
 In the same way as earlier, trigger the temperature threshold. The display of the SenseHat will show the "Too Hot" message if you use a Pi, or you will see the command being called in the output.
 
-# End of IoT Workshop
-
-This is where the IoT Workshop ends.
-Under next steps you can find steps that allow you to build out your lab, this does require an Azure subscription.
 
 ## Next steps
 
