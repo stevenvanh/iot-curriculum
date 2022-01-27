@@ -1,6 +1,6 @@
 # Set up IoT Central and the Raspberry Pi to send humidity data
 
-In the previous step you either [set up a Raspberry Pi](./set-up-pi.md), or [set up a virtual IoT device](./set-up-virtual-pi.md) to send temperature data.
+In the previous step you either [set up a Raspberry Pi with Sensehat](./set-up-pi-sensehat.md), or [set up a virtual IoT device](./set-up-virtual-pi.md) to send temperature data.
 
 In this step you will set up IoT Central to receive humidity data.
 
