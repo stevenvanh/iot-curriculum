@@ -1,6 +1,6 @@
 # Set up the Raspberry Pi with Sense HAT to report to the console triggered by an IoT Central command
 
-In the [previous step](./rules.md) you performed simple analytics and created an alert on the data using IoT Central rules.
+In the [previous step](./rules-pi-sensehat.md) you performed simple analytics and created an alert on the data using IoT Central rules.
 
 In this step you will set up the Pi to listen for an IoT Central command, and when the command is received send a message to the console.
 
