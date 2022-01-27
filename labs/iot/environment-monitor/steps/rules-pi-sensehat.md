@@ -66,6 +66,14 @@ To test the rule, the temperature sensor needs to receive a higher value than ex
 
     ![An email showing a sound measurement of 1008](../images/email-sound-check-rule-breach.jpg)
 
+
+### Disable the rule
+
+To stop receiving email alerts, you need to disable the rule.
+Disable the rule by adjusting the slider next to it
+[The disable rule slider](../images/iot-central-rules-rule-actions-email-disable.png)
+
+
 ## Next steps
 
 In this step you performed simple analytics and created an alert on the data using IoT Central rules.
