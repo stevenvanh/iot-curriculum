@@ -16,32 +16,14 @@ id_scope = os.getenv("ID_SCOPE")
 primary_key = os.getenv("PRIMARY_KEY")
 device_id = "pi-environment-monitor"
 
-# Use this to see if a high value for the sound should be sent
-# If this is True, a value of 1023 is sent, otherwise a random value
-# from 300-600 is sent
-report_high_sound = False
-
 # Gets telemetry from SenseHat
 # Telemetry needs to be sent as JSON data
 async def get_telemetry() -> str:
-    global report_high_sound
-    
     # Get temperature, rounded to 0 decimals
     temperature = round(sense.get_temperature())
 
     # Get humidity, rounded to 0 decimals
     humidity = round(sense.get_humidity())
-
-    # If a high sound value is wanted, send 1023
-    # otherwise pick a random sound level
-    if report_high_sound:
-        sound = 1023
-
-        # Reset the report high sound flag, so next time
-        # a normal sound level is reported
-        report_high_sound = False
-    else:
-        sound = random.randint(300, 600)
 
     # Build a dictionary of data
     # The items in the dictionary need names that match the
@@ -49,7 +31,6 @@ async def get_telemetry() -> str:
     dict = {
         "Temperature" : temperature,  # The temperature value
         "Humidity" : humidity,        # The humidity value
-        "Sound" : sound               # The sound value
     }
 
     # Convert the dictionary to JSON
