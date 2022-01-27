@@ -64,7 +64,7 @@ To test the rule, the temperature sensor needs to receive a higher value than ex
 
 1. Check your email for an alert. The Email will include the value that caused the rule to trigger. It may take a few minutes for the email to arrive.
 
-    ![An email showing a sound measurement of 1008](../images/email-sound-check-rule-breach.jpg)
+    ![An email showing a sound measurement of 1008](../images/email-temp-rule-breach.png)
 
 
 ### Disable the rule
