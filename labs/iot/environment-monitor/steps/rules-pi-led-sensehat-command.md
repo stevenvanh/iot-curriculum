@@ -35,11 +35,9 @@ The code can be tested by manually calling the command from IoT Central.
 
 1. This tab shows the *Too Hot* command with a **Run** button to execute the command. Select the **Run** button.
 
-    ![The run button](../images/iot-central-device-commands-tab-toohot-run-button.png)
-
 1. You will see the result of this command depending on if you are using a Pi or a virtual device
 
-    * If you are using a Raspberry Pi, you will see the LED light for 10 seconds, then turn off
+    * If you use the Raspberry Pi with Sense HAT you should see "Too Hot" on the display.
     * If you are using a virtual IoT device, you will see the following appear in the console:
 
         ```output
@@ -47,7 +45,7 @@ The code can be tested by manually calling the command from IoT Central.
         Too Hot Command received
         #########################
         ```
-     * If you use the Raspberry Pi with Sense HAT you should see "Too Hot" on the display.
+     
 
 ## Call the command from the rule
 
