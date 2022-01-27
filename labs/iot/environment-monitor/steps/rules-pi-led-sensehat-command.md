@@ -108,48 +108,48 @@ https://<app_name>.azureiotcentral.com/api/preview/devices/pi-environment-monito
 
 #### Optionally: You can test this webhook using Postman, a free tool for testing REST APIs.
 
-        1. Download Postman from this link:
+1. Download Postman from this link:
 
-            [getpostman.com/downloads](http://getpostman.com/downloads)
+    [getpostman.com/downloads](http://getpostman.com/downloads)
 
-            Once downloaded, install the app and launch it.
+    Once downloaded, install the app and launch it.
 
-        1. From Postman, select *File->New Tab*
+1. From Postman, select *File->New Tab*
 
-        1. In the *Untitled Request* tab, set the following:
+1. In the *Untitled Request* tab, set the following:
 
-            * Set the request type to `POST`
-            * Enter the encoded command URL into the *Request URL* box
-            * In the *Body* tab, set the type to `raw` and `JSON`
-            * Set the body to be `{}`
+    * Set the request type to `POST`
+    * Enter the encoded command URL into the *Request URL* box
+    * In the *Body* tab, set the type to `raw` and `JSON`
+    * Set the body to be `{}`
 
-        1. Select the **Send** button
+1. Select the **Send** button
 
-            ![The postman command call](../images/postman-command-call.png)
+    ![The postman command call](../images/postman-command-call.png)
 
-        The request will run and you will see result in the *Body* tab of the response section.
+The request will run and you will see result in the *Body* tab of the response section.
 
-        ```json
-        {
-            "response": {
-                "result": true
-            },
-            "responseCode": 200
-        }
-        ```
+```json
+{
+    "response": {
+        "result": true
+    },
+    "responseCode": 200
+}
+```
 
-        You should also see the Too Hot command called in the output of the Python app, and either the LED light up for 10 seconds, or a message output to the console.
+You should also see the Too Hot command called in the output of the Python app, and either the LED light up for 10 seconds, or a message output to the console.
 
-        > If you see the following, then the Python app is not running:
-        >
-        > ```json
-        > {
-        >     "error": {
-        >         "code": "NotFound",
-        >         "message": "Could not connect to device in order to send command. You can contact support at https://aka.ms/iotcentral-support. Please include the following information. Request ID: tsbbfyb, Time: Fri, 21 Aug 2020 02:15:35 GMT."
-        >     }
-        > }
-        > ```
+> If you see the following, then the Python app is not running:
+>
+> ```json
+> {
+>     "error": {
+>         "code": "NotFound",
+>         "message": "Could not connect to device in order to send command. You can contact support at https://aka.ms/iotcentral-support. Please include the following information. Request ID: tsbbfyb, Time: Fri, 21 Aug 2020 02:15:35 GMT."
+>     }
+> }
+> ```
 
 ### Add the webhook to the rule
 
