@@ -357,4 +357,8 @@ Visual Studio Code will now be configured to run Python on the Pi.
 
 In this step you set up a Raspberry Pi to send temperature data.
 
-In the [next step](./set-up-humidity-sound.md) you will add humidity and sound data to the telemetry.
+In the next step you will add humidity to the telemetry.
+Select the relevant next step from the list below depending on if you have a Pi or want to set up a virtual IoT device.
+
+* [Set up the telemetry on a Raspberry Pi with Sense HAT](./set-up-humidity.md)
+* [Set up the telemetry on a virtual device using your PC or Mac](./set-up-humidity-sound.md)
