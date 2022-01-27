@@ -41,7 +41,7 @@ To create an IoT Central rule
 
     ![The temperature conditions](../images/iot-central-rules-set-rule-conditions-temperature.png)
 
-    This value needs to be higher than your measured temperature, so check the output of the app running on the Pi to see what your temperature is, and increase or decrease this as necessary.
+    This value needs to be higher than your measured temperature, so check the output of the app running on the Pi to see what your temperature is, and adjust if necessary.
 
 1. In the *Actions* section, select the **+ Email** button
 
@@ -49,11 +49,10 @@ To create an IoT Central rule
 
 1. Name the email action `Send email` and put your email address in the *To* box. Then select the **Done** button.
 
-    ![The email configure dialog](../images/iot-central-rules-rule-actions-email-dialog.png)
+    ![The email configure dialog](../images/iot-central-rules-rule-actions-email-dialog-temperature.png)
 
 1. Select the **Save** button to save the rule
 
-    ![The save button](../images/iot-central-rules-save-rule-button.png)
 
 ### Test the rule
 
