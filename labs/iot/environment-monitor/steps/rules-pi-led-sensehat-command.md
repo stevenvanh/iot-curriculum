@@ -155,7 +155,7 @@ You should also see the Too Hot command called in the output of the Python app, 
 
 Once the webhook is tested, it can be added to a rule.
 
-Once a rule has been created, the devices that is responds too cannot be changed, so you will need to disable or delete the old rule.
+Once a rule has been created, the devices that is responds to cannot be changed, so you will need to disable or delete the old rule.
 
 1. Create a new rule using the steps from the previous section. Name it `Temperature Alert`, ensure the `Environment Monitor v3` device template is selected, and the condition is set on the `Temperature` telemetry value. There is no need to add an email action.
 
@@ -179,7 +179,7 @@ You should see the web hook action for the rule.
 
 ### Test the rule
 
-In the same way as earlier, trigger the temperature threshold. The display of the SenseHat will show the "Too Hot"message if you use a Pi, or you will see the command being called in the output.
+In the same way as earlier, trigger the temperature threshold. The display of the SenseHat will show the "Too Hot" message if you use a Pi, or you will see the command being called in the output.
 
 # End of IoT Workshop
 
