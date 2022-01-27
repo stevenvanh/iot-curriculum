@@ -71,7 +71,7 @@ API tokens are created from IoT Central.
 
     ![The generate token dialog](../images/iot-central-administration-api-tokens-generate-dialog.png)
 
-    Tokens have different roles that determine what they can do. The *Operator* role allows devices to be monitored and commands run, but devices and templates can't be changed. There are other roles that give more permissions. It's best practice to use the least privileged role possible.
+    Tokens have different roles that determine what they can do. The *App Operator* role allows devices to be monitored and commands run, but devices and templates can't be changed. There are other roles that give more permissions. It's best practice to use the least privileged role possible.
 
 1. Select the **Generate** button.
 
@@ -106,7 +106,7 @@ https://<app_name>.azureiotcentral.com/api/preview/devices/pi-environment-monito
     * Replace `<app_name>` with the name of your IoT Central app. You can get this from the URL that you use to access IoT central
     * Replace `<encoded_api_token>` with the API token copied earlier, with all the `&` characters replaced with `%26` and space replaced with `%20`
 
-### Optionally: You can test this webhook using Postman, a free tool for testing REST APIs.
+#### Optionally: You can test this webhook using Postman, a free tool for testing REST APIs.
 
 1. Download Postman from this link:
 
@@ -155,21 +155,9 @@ You should also see the Too Hot command called in the output of the Python app, 
 
 Once the webhook is tested, it can be added to a rule.
 
-Once a rule has been created, the devices that is responds too cannot be changed, so you will need to delete the old rule, and create a new one.
+Once a rule has been created, the devices that is responds too cannot be changed, so you will need to disable or delete the old rule.
 
-1. Head to the *Rules* tab in the side bar menu, and select the *Sound Check* rule
-
-    ![The rules list](../images/iot-central-rules-list-sound-check.png)
-
-1. Select the **Delete** button
-
-    ![The delete button](../images/iot-central-rules-delete-rule.png)
-
-1. From the confirmation dialog, select **Delete**
-
-    ![The delete confirmation dialog](../images/iot-central-rules-delete-rule-confirm.png)
-
-1. Create a new rule using the steps from the previous section. Name it `Sound Check`, ensure the `Environment Monitor v3` device template is selected, and the condition is set on the `Sound` telemetry value. There is no need to add an email action.
+1. Create a new rule using the steps from the previous section. Name it `Temperature Alert`, ensure the `Environment Monitor v3` device template is selected, and the condition is set on the `Temperature` telemetry value. There is no need to add an email action.
 
 1. In the *Actions* section, select **+ Webhook**
 
