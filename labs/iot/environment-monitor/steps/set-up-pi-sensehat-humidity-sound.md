@@ -52,14 +52,10 @@ In this section you will be adding code to the Python file. If you haven't used 
 1. The app will start up, connect to Azure IoT Central, then send temperature and humidity values:
 
     ```output
-    pi@jim-iot-pi:~/EnvironmentMonitor $ python3 app.py
-    RegistrationStage(RequestAndResponseOperation): Op will transition into polling after interval 2.  Setting timer.
+    pi@lab28022022:~/EnvironmentMonitor $ python3 app.py
     Connecting
     Connected
-    Telemetry: {"Temperature": 27.0, "Humidity": 44.0, "Sound": 304}
-    Telemetry: {"Temperature": 26.0, "Humidity": 45.0, "Sound": 326}
-    Telemetry: {"Temperature": 26.0, "Humidity": 45.0, "Sound": 400}
-    Telemetry: {"Temperature": 26.0, "Humidity": 45.0, "Sound": 361}
+    Telemetry: {"Temperature": 39, "Humidity": 23}
     ```
 
     Try adjusting humidity level by breathing on the sensor, and see the values change both in the output of the Python code, and in IoT Central.
