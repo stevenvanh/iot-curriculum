@@ -2,22 +2,22 @@
 
 In the [previous step](./rules-pi-sensehat.md) you performed simple analytics and created an alert on the data using IoT Central rules.
 
-In this step you will set up the Pi to listen for an IoT Central command, and when the command is received send a message to the console.
+In this step you will set up the Pi to listen for an IoT Central command, and when the command is received send a message to the console and show a message on the SenseHat Display.
 
 ## IoT Central commands
 
-IoT Central commands are instructions sent by IoT Central to command a device to do something. For example, if a sound level is reaching dangerous levels, IoT Central can send a command to a device.
+IoT Central commands are instructions sent by IoT Central to command a device to do something. For example, if a temperature level is reaching dangerous levels, IoT Central can send a command to a device.
 
 The command will be set up and tested in a later step - it can't be tested until a device is able to listen for it. In this step, the virtual IoT device will be configured to listen for the command, and when received send a message to the console.
 
-The command will be called `TooLoud`.
+The command will be called `TooHot`.
 
 
 ## Program the Pi
 
 The Pi needs some code changes to listen for the command, and be able to output to the console.
 
-### Update the code to handle the Too Loud command
+### Update the code to handle the Too Hot command
 
 In this section you will be adding code to the Python file. If you haven't used Python before, be aware it is very specific about how the lines are indented, so make sure the code is indented the same as the code around it. You can find the full code in the [app.py](../code/pi-sensehat/led/app.py) file in the [code/pi-sensehat/led](../code/pi-sensehat/led) folder to check your code against if you get errors.
 
@@ -41,13 +41,13 @@ In this section you will be adding code to the Python file. If you haven't used 
         # Loop forever waiting for commands
         while True:
             # Wait for commands from IoT Central
-            method_request = await device_client.receive_method_request("TooLoud")
+            method_request = await device_client.receive_method_request("TooHot")
 
             # Log that the command was received
-            print("Too Loud Command received")
+            print("Too Hot Command received")
             
-            # Show "TooLoud" on SenseHat Display
-            sense.show_message("Too Loud", text_colour=[255, 0, 0])
+            # Show "TooHot" on SenseHat Display
+            sense.show_message("Too Hot", text_colour=[255, 0, 0])
 
             # IoT Central expects a response from a command, saying if the call
             # was successful or not, so send a success response
@@ -62,7 +62,7 @@ In this section you will be adding code to the Python file. If you haven't used 
             await device_client.send_method_response(method_response)
     ```
 
-    This code sets up a listener for the commands from IoT Central, and if the `TooLoud` command is received, it sends a message to the console, and sends a response to IoT Central to say the command was handled.
+    This code sets up a listener for the commands from IoT Central, and if the `TooHot` command is received, it sends a message to the console, and sends a response to IoT Central to say the command was handled.
 
 1. Head to after the `main_loop` function and before the `await main_loop()` call
 
