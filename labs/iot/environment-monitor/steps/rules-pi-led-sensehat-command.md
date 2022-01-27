@@ -18,7 +18,6 @@ Commands are capabilities on an interface, so to add a command, a new version of
     | ------------ | ------- | --------------- | ------------ | ------- | -------- |
     | Too Hot     | TooHot | Command         | Synchronous  | off     | off      |
 
-    ![The new Too Hot capability](../images/iot-central-interface-new-too-hot-capability.png)
 
 1. Save the interface, and publish the device template
 
