@@ -67,7 +67,7 @@ API tokens are created from IoT Central.
 
     ![The generate token button](../images/iot-central-administration-api-tokens-generate-button.png)
 
-1. Name the token `CommandRunner` and set the  *Role* to `Operator`.
+1. Name the token `CommandRunner` and set the  *Role* to `App Operator`.
 
     ![The generate token dialog](../images/iot-central-administration-api-tokens-generate-dialog.png)
 
