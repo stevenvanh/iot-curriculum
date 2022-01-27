@@ -52,6 +52,8 @@ This is where the IoT Workshop ends.
 You can optionally create the webhook as discribed in the next section.
 Under next steps at the bottom of this page you can find steps that allow you to build out your lab, this does require an Azure subscription.
 
+
+
 ## Optionally: Call the command from the rule
 
 IoT central commands can be called from webhooks - special URLs that you can make a request to to execute the command. Not everyone can call these commands - that would make IoT Central apps insecure. Instead to be able to call the command you need to be authorized, for example using an API token, a special key that allows you to call these commands.
