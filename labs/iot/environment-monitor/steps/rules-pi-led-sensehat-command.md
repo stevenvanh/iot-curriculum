@@ -48,9 +48,9 @@ The code can be tested by manually calling the command from IoT Central.
      
 # End of IoT Workshop
 
-This is where the IoT Workshop ends.
+**This is where the IoT Workshop ends.
 You can optionally create the webhook as discribed in the next section.
-Under next steps at the bottom of this page you can find steps that allow you to build out your lab, this does require an Azure subscription.
+Under next steps at the bottom of this page you can find steps that allow you to build out your lab, this does require an Azure subscription.**
 
 
 
