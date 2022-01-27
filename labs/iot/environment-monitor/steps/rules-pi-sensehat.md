@@ -12,10 +12,8 @@ The actions that can be run include sending emails, calling webhooks (Web addres
 
 The rule you will be creating will be an alert when the temperature level breaks a threshold. This kind of setup can be used in the real world to monitor equipment in factories or industry to ensure it doesn't exceed safe levels. The concept can also be used for things like temperature monitoring of machinery to ensure it doesn't overheat, or vibration monitoring to ensure a machine isn't breaking. In most situations you would either want an alert through a notification such as an email, or through direct control of a machine.
 
-This part will cover sending an email alert. In a later step, you will enhance this rule to control the IoT device by lighting an LED, or showing a message on the console of the virtual IoT device.
+This part will cover sending an email alert. In a later step, you will enhance this rule to show a message on the SenseHat Display, or showing a message on the console of the virtual IoT device.
 
->**The Sense HAT does not have noise detection capabilities. You can emulate this by adjusting the code as instructed.
-You can also configure a temperature or humidity alarm instead of a sound alarm.**
 
 ## Create an IoT Central rule
 
@@ -31,25 +29,19 @@ To create an IoT Central rule
 
     ![The new rules button](../images/iot-central-rules-new-rule-button.png)
 
-1. Name the rule `Sound Check`
+1. Name the rule `Temperature Alert`
 
-    ![The named rule](../images/iot-central-rules-name-rule.png)
+    ![The named rule](../images/iot-central-rules-name-rule-temp.png)
 
 1. Drop down the **Device Template** box in the **Target Devices** section and select `Environment Monitor v2`
 
     ![Selecting the target devices](../images/iot-central-rules-select-rule-target-devices-v2.png)
 
-1. For the condition, select the `Sound` *Telemetry* value, the `Is greater than` *Operator*, and set the *Value* to something like 400
+1. For the condition, select the `Temperature` *Telemetry* value, the `Is greater than` *Operator*, and set the *Value* to something like 40
 
-    ![The sound conditions](../images/iot-central-rules-set-rule-conditions-sound.png)
+    ![The temperature conditions](../images/iot-central-rules-set-rule-conditions-temperature.png)
 
-    This value needs to be higher than your ambient noise levels, so check the output of the app running on the Pi to see what your background noise level is, and increase or decrease this as necessary to be above the highest normal background noise. For example, if your background noise ranges from 250-350 then 400 is an ideal value.
-
-    If you are using the virtual IoT device, set this to 700.
-
-    To test this, you will need to increase the noise levels, so if you are getting values with additional noise such as music then turn this off to find the ideal value.
-
-    > When typing the value into the *Value* box, you will need to press return to set the value, rather than just click out or tab to the next box
+    This value needs to be higher than your measured temperature, so check the output of the app running on the Pi to see what your temperature is, and increase or decrease this as necessary.
 
 1. In the *Actions* section, select the **+ Email** button
 
@@ -65,19 +57,11 @@ To create an IoT Central rule
 
 ### Test the rule
 
-To test the rule, the sound sensor needs to receive a higher value than expected.
+To test the rule, the temperature sensor needs to receive a higher value than expected.
 
 1. Trigger the rule:
 
-    * If you are using a Raspberry Pi:
-
-        1. Find something that makes noise, for example [playing this video on your phone](https://youtu.be/dQw4w9WgXcQ) with the volume turned up.
-
-        1. Position the noise close to the sound sensor with the Python app running on the Pi. Watch for a sound value over your threshold. Once the threshold is exceeded you can remove the sensor from the source of noise.
-
-    * If you are using the virtual IoT device, press the space key to simulate a loud noise
-
-    * For the IoT Workshop with Sense HAT, trigger the value for the telemetry option that you used to configure the alarm.
+    * Increase the temperature, for example by putting the cover on the SenseHat.
 
 1. Check your email for an alert. The Email will include the value that caused the rule to trigger. It may take a few minutes for the email to arrive.
 
