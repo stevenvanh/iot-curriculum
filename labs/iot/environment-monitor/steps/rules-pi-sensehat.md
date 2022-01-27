@@ -71,7 +71,7 @@ To test the rule, the temperature sensor needs to receive a higher value than ex
 
 To stop receiving email alerts, you need to disable the rule.
 Disable the rule by adjusting the slider next to it
-[The disable rule slider](../images/iot-central-rules-rule-actions-email-disable.png)
+![The disable rule slider](../images/iot-central-rules-rule-actions-email-disable.png)
 
 
 ## Next steps
