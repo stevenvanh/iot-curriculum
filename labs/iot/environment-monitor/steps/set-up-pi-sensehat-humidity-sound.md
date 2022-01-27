@@ -65,4 +65,4 @@ In this section you will be adding code to the Python file. If you haven't used 
 
 In this step you set up the Raspberry Pi to send humidity data.
 
-In the [next step](./rules.md) you will perform simple analytics and create alerts on the data using IoT Central rules.
+In the [next step](./rules-pi-sensehat.md) you will perform simple analytics and create alerts on the data using IoT Central rules.
