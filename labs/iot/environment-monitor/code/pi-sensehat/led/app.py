@@ -17,32 +17,15 @@ id_scope = os.getenv("ID_SCOPE")
 primary_key = os.getenv("PRIMARY_KEY")
 device_id = "pi-environment-monitor"
 
-# Use this to see if a high value for the sound should be sent
-# If this is True, a value of 1023 is sent, otherwise a random value
-# from 300-600 is sent
-report_high_sound = False
 
 # Gets telemetry from SenseHat
 # Telemetry needs to be sent as JSON data
 async def get_telemetry() -> str:
-    global report_high_sound
-    
     # Get temperature, rounded to 0 decimals
     temperature = round(sense.get_temperature())
 
     # Get humidity, rounded to 0 decimals
     humidity = round(sense.get_humidity())
-
-    # If a high sound value is wanted, send 1023
-    # otherwise pick a random sound level
-    if report_high_sound:
-        sound = 1023
-
-        # Reset the report high sound flag, so next time
-        # a normal sound level is reported
-        report_high_sound = False
-    else:
-        sound = random.randint(300, 600)
 
     # Build a dictionary of data
     # The items in the dictionary need names that match the
@@ -85,13 +68,13 @@ async def main():
         # Loop forever waiting for commands
         while True:
             # Wait for commands from IoT Central
-            method_request = await device_client.receive_method_request("TooLoud")
+            method_request = await device_client.receive_method_request("TooHot")
 
             # Log that the command was received
-            print("Too Loud Command received")
+            print("Too Hot Command received")
 
              # Show "TooLoud" on SenseHat Display
-            sense.show_message("Too Loud", text_colour=[255, 0, 0])
+            sense.show_message("Too Hot", text_colour=[255, 0, 0])
 
             # IoT Central expects a response from a command, saying if the call
             # was successful or not, so send a success response
