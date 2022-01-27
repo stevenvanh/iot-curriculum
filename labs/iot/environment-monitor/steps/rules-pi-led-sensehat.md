@@ -93,4 +93,9 @@ Leave the code running whilst you do the next step.
 
 In this step you set up the Pi to listen for an IoT Central command, and send a message to the console.
 
-In the [next step](./rules-command.md) you will create the IoT Central command and trigger it from a rule.
+In the next step you will create the IoT Central command and trigger it from a rule. Select the relevant next step from the list below depending on if you have a Pi or want to set up a virtual IoT device.
+
+* [Set up a command for a Raspberry Pi with Sense HAT](./rules-pi-led-sensehat-command.md)
+* [Set up a command for a virtual device using your PC or Mac](./rules-command.md)
+
+
