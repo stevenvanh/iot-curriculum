@@ -50,6 +50,9 @@ The code can be tested by manually calling the command from IoT Central.
         ```
      * If you use the Raspberry Pi with Sense HAT you should see "Too Loud" on the display.
 
+
+## This is the end of the IoT workshop ##
+
 ## Call the command from the rule
 
 IoT central commands can be called from webhooks - special URLs that you can make a request to to execute the command. Not everyone can call these commands - that would make IoT Central apps insecure. Instead to be able to call the command you need to be authorized, for example using an API token, a special key that allows you to call these commands.
