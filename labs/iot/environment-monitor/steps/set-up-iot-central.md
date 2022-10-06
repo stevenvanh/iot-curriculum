@@ -47,13 +47,13 @@ To create an IoT Central application, follow these steps:
 
     1. Each application needs a unique URL - this is the web site you will go to to access the IoT Central application. It defaults to a variant of the application name, but it needs to be globally unique - as in no other IoT central application can have the same URL. Try adding something unique to it, such as your name or the current date.
 
-    1. Select a pricing plan. The free tier doesn't need an Azure subscription to use and supports up to 5 devices, but will be deleted automatically after 7 days. The other tiers need an Azure subscription but you can have 2 devices for free. After that you pay per device/month - the Standard 1 (S1) tier is US$0.40 per device per month at the time of writing, the Standard 2 (S2) tier is US$0.70. You can find the latest pricing for your region in the [Azure IoT Central pricing guide](https://azure.microsoft.com/pricing/details/iot-central/?WT.mc_id=academic-7372-jabenn)
+    1. Select a pricing plan. The tiers need an Azure subscription but you can have 2 devices for free. After that you pay per device/month - the Standard 0 (S0) tier is US$0.08 per device per month at the time of writing, the Standard 1 (S1) tier is US$0.40 and the Standard 2 (S2) tier is US$0.70. You can find the latest pricing for your region in the [Azure IoT Central pricing guide](https://azure.microsoft.com/pricing/details/iot-central/?WT.mc_id=academic-7372-jabenn)
 
         **The free pricing tier is no longer available, you know need to use an existing subscription, or create an Azure Free account**
 
-        Optionally you can use an subscription. In that case the recommended tier is Standard 2 to ensure that you can send enough messages. This will be free for this lab, as you will only be creating 2 devices.
+        You can use an existing Azure subscription, or create an Azure Free account, https://azure.microsoft.com/en-us/free/search/. The recommended tier is Standard 2 to ensure that you can send enough messages. This will be free for this lab, as you will only be creating 2 devices.
 
-    1. Select your Azure subscription and location closes to you, or enter your name, phone number and country if you are using the free tier.
+    1. Select your Azure subscription and location closes to you.
 
     1. Select the **Create** button
 
