@@ -33,7 +33,6 @@ async def get_telemetry() -> str:
     dict = {
         "Temperature" : temperature,  # The temperature value
         "Humidity" : humidity,        # The humidity value
-        "Sound" : sound               # The sound value
     }
 
     # Convert the dictionary to JSON
