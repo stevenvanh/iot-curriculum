@@ -63,11 +63,9 @@ IoT central commands can be called from webhooks - special URLs that you can mak
 
 API tokens are created from IoT Central.
 
-1. Select the **Administration** tab from the side bar menu
+1. Select the **Permissions** tab from the side bar menu
 
-    ![The administration tab](../../../images/iot-central-menu-administration.png)
-
-1. Select **API tokens** from the *Administration* menu
+1. Select **API tokens**
 
     ![The API tokens menu](../../../images/iot-central-menu-administration-api-tokens.png)
 
