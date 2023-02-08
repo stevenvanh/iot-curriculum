@@ -67,8 +67,6 @@ API tokens are created from IoT Central.
 
 1. Select **API tokens**
 
-    ![The API tokens menu](../../../images/iot-central-menu-administration-api-tokens.png)
-
 1. Select the **+ Generate token** button
 
     ![The generate token button](../images/iot-central-administration-api-tokens-generate-button.png)
