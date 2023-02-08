@@ -36,7 +36,7 @@ In this section you will be adding code to the Python file. If you haven't used 
     ```python
   
     # Asynchronously wait for commands from IoT Central
-    # If the TooLoud command is called, handle it
+    # If the TooHot command is called, handle it
     async def command_listener(device_client):
         # Loop forever waiting for commands
         while True:
