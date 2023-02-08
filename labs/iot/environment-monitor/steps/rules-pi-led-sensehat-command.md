@@ -67,9 +67,7 @@ API tokens are created from IoT Central.
 
 1. Select **API tokens**
 
-1. Select the **+ Generate token** button
-
-    ![The generate token button](../images/iot-central-administration-api-tokens-generate-button.png)
+1. Select the **+ New token** button
 
 1. Name the token `CommandRunner` and set the  *Role* to `App Operator`.
 
