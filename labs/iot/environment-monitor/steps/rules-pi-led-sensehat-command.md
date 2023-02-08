@@ -51,6 +51,7 @@ The code can be tested by manually calling the command from IoT Central.
 **This is where the IoT Workshop ends.
 You can optionally create the webhook as discribed in the next section.
 Under next steps at the bottom of this page you can find steps that allow you to build out your lab, this does require an Azure subscription.**
+For more information on api tokens and IoT Central REST API see https://learn.microsoft.com/en-us/azure/iot-central/core/howto-authorize-rest-api and https://learn.microsoft.com/en-us/azure/iot-central/core/howto-control-devices-with-rest-api
 
 
 
