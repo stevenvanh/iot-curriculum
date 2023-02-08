@@ -62,7 +62,7 @@ async def main():
     print("Connected")
 
     # Asynchronously wait for commands from IoT Central
-    # If the TooLoud command is called, handle it and output to the console
+    # If the TooHot command is called, handle it and output to the console
     async def command_listener(device_client):
         # Loop forever waiting for commands
         while True:
