@@ -80,7 +80,7 @@ The current view for the device only shows Temperature, so to show humidity new 
 
     ![Naming the view](../images/iot-central-device-templates-new-view-name-humidity.png)
 
-1. Check **Humidity** in the *Telemetry* section, and select **Add tile**
+1. Under Start with devices, Check **Humidity** in the *Telemetry* section, and select **Add tile**
 
     ![Adding the humidity tile](../images/iot-central-device-templates-new-view-tile-humidity.png)
 
