@@ -175,7 +175,7 @@ The new humidity value also need to be shown on the dashboard.
 
     ![the edit dashboard button](../images/iot-central-dashboard-edit-button.png)
 
-1. From the **Edit dashboard** panel in the **Add a tile** section, drop down the *Device group* list, and select `Environment Monitor v2 - All devices`
+1. In the **Start with devices** section, drop down the *Device group* list, and select `Environment Monitor v2 - All devices`
 
     ![The device groups dropdown](../images/iot-central-dashboard-add-tile-device-dropdown.png)
 
