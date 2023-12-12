@@ -146,29 +146,7 @@ You will now see the devices with the new device template. Selecting them will a
 
 ### Update the dashboard
 
-The dashboard was configured to show the devices from the *Environment Monitor - All Devices* device group with the *Environment Monitor* device template, not the new *Environment Monitor v2* template. It needs to be configured to show data from this new template. This is done by updating the device group to include the devices with the new template.
-
-1. Select the **Device groups** tab from the side bar menu
-
-    ![The device groups menu](../../../images/iot-central-menu-device-groups.png)
-
-1. Select the *All Devices* device group
-
-    ![The all devices group](../images/iot-central-device-groups-all-devices-group.png)
-
-1. Currently the device group is set up to filter all devices that use the `Environment Monitor` template. This needs to be updated to the `v2` version of this template. Drop down the *Value* box in the *Scopes* section and select `Environment Monitor v2`
-
-    ![Selecting the v2 template](../images/iot-central-device-groups-value-v2.png)
-
-1. You can validate the devices that will be in this group by selecting the **Run query** button
-
-    ![The run query button](../images/iot-central-device-groups-run-query-button.png)
-
-    When you run this, you will see all the simulated and physical device appear in the results list.
-
-1. Save the changes by selecting the **Save** button.
-
-    ![The save button](../images/iot-central-device-groups-save-button.png)
+The dashboard was configured to show the devices from the *Environment Monitor - All Devices* device group with the *Environment Monitor* device template, not the new *Environment Monitor v2* template. It needs to be configured to show data from this new template.
 
 1. Select the **Dashboard** tab from the side bar menu
 
