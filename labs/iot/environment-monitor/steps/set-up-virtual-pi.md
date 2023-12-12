@@ -18,7 +18,7 @@ This device will be programmed in Python, so you will need Python installed.
 
 * **Windows:**
 
-    You can install Python from the [Python Downloads page](https://www.python.org/downloads/).
+    You can install Python from the [Microsoft Store](https://www.microsoft.com/store/productId/9NCVDN91XZQP?ocid=pdpshare).
 
 * **macOS**
 
