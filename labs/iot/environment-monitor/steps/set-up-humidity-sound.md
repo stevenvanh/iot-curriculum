@@ -94,7 +94,7 @@ The current view for the device only shows Temperature, so to show humidity and 
 
 1. Drag the bottom corner to resize the tile to the size you want
 
-1. Select the cog button to adjust the properties for the tile
+1. Select the edit button to adjust the properties for the tile
 
     ![The cog button](../images/iot-central-device-templates-view-tile-humidity-cog.png)
 
