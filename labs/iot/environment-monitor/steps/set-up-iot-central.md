@@ -151,10 +151,9 @@ If you don't see any data on this dashboard, you may need to add the device to i
 
     ![the edit dashboard button](../images/iot-central-dashboard-edit-button.png)
 
-1. In the "Ädd a tile" dialog, Select "Start with devices"
+1. In the "Add a tile" dialog, Select "Start with devices"
 
-
-1. From the *Configure Chart* panel, drop down the *Devices* list, and check the `Simulated Environment Monitor`.
+1. From the *Start with devices* panel, drop down the *Devices* list, and check the `Simulated Environment Monitor`.
 
     ![Selecting the simulated device](../images/iot-central-dashboard-temperature-tile-select-devices-dropdown.png)
 
