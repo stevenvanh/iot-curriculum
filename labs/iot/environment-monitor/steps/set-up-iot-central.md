@@ -37,7 +37,7 @@ To create an IoT Central application, follow these steps:
 
 1. Click this link to create a new IoT Central application by using a template that already has a device template set up for an environment monitor with a temperature sensor:
 
-    [aka.ms/iot-curriculum/env-monitor-template](https://apps.azureiotcentral.com/build/new/51f1a9a2-9444-4bd8-a370-4e08902c86df))
+    [aka.ms/iot-curriculum/env-monitor-template](https://apps.azureiotcentral.com/build/new/51f1a9a2-9444-4bd8-a370-4e08902c86df)
 
 1. Log in with a Microsoft account. If you are planning to use an Azure subscription, log in with an account that has access to the subscription.
 
