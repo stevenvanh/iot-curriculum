@@ -52,8 +52,6 @@ The dashboard currently only shows temperature from the simulated device. It nee
 
 1. Select the **Update** button
 
-    ![The update button](../images/iot-central-dashboard-temperature-tile-update-button.png)
-
 1. Select the **Save** button for the dashboard
 
     ![The save button](../images/iot-central-dashboard-temperature-tile-edit-save-button.png)
