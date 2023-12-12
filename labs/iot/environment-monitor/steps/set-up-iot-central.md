@@ -159,7 +159,7 @@ If you don't see any data on this dashboard, you may need to add the device to i
 
     ![Selecting the simulated device](../images/iot-central-dashboard-temperature-tile-select-devices-dropdown.png)
 
-1. Select the **Update** button
+1. Select the **Add tile** option
 
     ![The update button](../images/iot-central-dashboard-temperature-tile-update-button.png)
 
