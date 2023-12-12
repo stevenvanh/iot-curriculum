@@ -58,10 +58,7 @@ The code can be tested by manually calling the command from IoT Central.
 # End of IoT Workshop
 
 This is where the IoT Workshop ends.
-Under next steps you can find steps that allow you to build out your lab, this does require an Azure subscription.
 
-## Next steps
+Do not forget to clean up Azure resources if needed.
 
-In this step you created the IoT Central command and triggered it from a rule.
 
-In the [next step](./anomaly-detection.md) you will perform more advanced analytics to detect anomalies in the data.
