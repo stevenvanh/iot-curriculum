@@ -53,64 +53,6 @@ The code can be tested by manually calling the command from IoT Central.
 
 ## This is the end of the IoT workshop ##
 
-## Call the command from the rule
-
-IoT central commands can be called from webhooks - special URLs that you can make a request to to execute the command. Not everyone can call these commands - that would make IoT Central apps insecure. Instead to be able to call the command you need to be authorized, for example using an API token, a special key that allows you to call these commands.
-
-### Create the API token
-
-API tokens are created from IoT Central.
-
-1. Select the **Administration** tab from the side bar menu
-
-    ![The administration tab](../../../images/iot-central-menu-administration.png)
-
-1. Select **API tokens** from the *Administration* menu
-
-    ![The API tokens menu](../../../images/iot-central-menu-administration-api-tokens.png)
-
-1. Select the **+ Generate token** button
-
-    ![The generate token button](../images/iot-central-administration-api-tokens-generate-button.png)
-
-1. Name the token `CommandRunner` and set the  *Role* to `Operator`.
-
-    ![The generate token dialog](../images/iot-central-administration-api-tokens-generate-dialog.png)
-
-    Tokens have different roles that determine what they can do. The *Operator* role allows devices to be monitored and commands run, but devices and templates can't be changed. There are other roles that give more permissions. It's best practice to use the least privileged role possible.
-
-1. Select the **Generate** button.
-
-1. A dialog will popup showing the token. This is the **ONLY** time you will be able to see this token, so take a copy of it now and save it somewhere. If you lose this, you will need to create a new token.
-
-    ![The generated token dialog](../images/iot-central-administration-api-tokens-generated-token-dialog.png)
-
-### URL Encode the API token
-
-The token is not URL encoded - that means it can't be passed as is to a web call as is. To fix it, do the following:
-
-1. Paste the API token into a text editor, such as in a new document in VS Code
-
-1. In the API token there will be 3 ampersands (`&` characters) before various parts - `&sig=`, `&skn=` and `&se=`. These `&` characters cannot be passed to a web call, so need to be changed.
-
-1. Replace all `&` characters with `%26` - so `&sig=` becomes `%26sig=`, `&skn=` becomes `%26sig=`, and `&se=` becomes `%26se=`
-
-1. There is also a space in the API - `SharedAccessSignature sr=`. This space needs to be replaced with `%20`, so the first part of the token should read `SharedAccessSignature%20sr=`
-
-### Create the webhook
-
-The rule can call a webhook when triggered. The webhook needs a URL to call - a web address that it will use to run the command. This needs to be built up using your IoT Central app details, as well as the API token.
-
-The format of this URL is:
-
-```output
-https://<app_name>.azureiotcentral.com/api/preview/devices/pi-environment-monitor/components/EnvironmentMonitor_Environment/commands/TooLoud?access_token=<encoded_api_token>
-```
-
-1. To build the URL that you will use, take the above URL and replace the following:
-
-    * Replace `<app_name>` with the name of your IoT Central app. You can get this from the URL that you use to access IoT central
-    * Replace `<encoded_api_token>` with the API token copied earlier, with all the `&` characters replaced with `%26` and space replaced with `%20`
 
 
 # End of IoT Workshop
