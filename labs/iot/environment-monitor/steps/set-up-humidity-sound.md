@@ -146,7 +146,7 @@ You will now see the devices with the new device template. Selecting them will a
 
 ### Update the dashboard
 
-The dashboard was configured to show the devices from the *All Devices* device group with the *Environment Monitor* device template, not the new *Environment Monitor v2* template. It needs to be configured to show data from this new template. This is done by updating the device group to include the devices with the new template.
+The dashboard was configured to show the devices from the *Environment Monitor - All Devices* device group with the *Environment Monitor* device template, not the new *Environment Monitor v2* template. It needs to be configured to show data from this new template. This is done by updating the device group to include the devices with the new template.
 
 1. Select the **Device groups** tab from the side bar menu
 
